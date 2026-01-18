@@ -2,6 +2,22 @@
 
 This repository contains a PyTorch implementation of a GPT-style language model, structured for educational purposes and mass usage.
 
+## usage after training and uploading to hf
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained('oe-void/transformers', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('oe-void/transformers')
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+print("Generating text...")
+context = torch.tensor([[tokenizer.bos_token_id]], dtype=torch.long, device=device)
+generated_ids = m.generate(context, max_new_tokens=256)[0].tolist()
+print(tokenizer.decode(generated_ids))
+
+```
 ## Structure
 
 - `GPT/`: Main package
