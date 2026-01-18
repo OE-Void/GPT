@@ -1,5 +1,7 @@
 # GPT From Scratch
 
+[open in colab](https://colab.research.google.com/github/OE-Void/GPT/blob/main/model_from_scr.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg)
+
 This repository contains a PyTorch implementation of a GPT-style language model, structured for educational purposes and mass usage.
 
 ## usage after training and uploading to hf
