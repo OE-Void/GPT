@@ -9,8 +9,8 @@ This repository contains a PyTorch implementation of a GPT-style language model,
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model = AutoModelForCausalLM.from_pretrained('oe-void/transformers', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('oe-void/transformers')
+model = AutoModelForCausalLM.from_pretrained('your_repo_id', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('your_repo_id')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
