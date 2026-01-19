@@ -1,6 +1,8 @@
 # GPT From Scratch
 
-[`https://colab.research.google.com/github/OE-Void/GPT/blob/main/model_from_scr.ipynb`](https://colab.research.google.com/github/OE-Void/GPT/blob/main/model_from_scr.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OE-Void/GPT/blob/main/model_from_scr.ipynb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
 
 A **PyTorch implementation of a GPT-style language model**, built from scratch for **educational purposes** and **scalable usage**.  
 This project demonstrates how transformer-based language models can be trained, evaluated, and deployed.
